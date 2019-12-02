@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PLANNING AHEAD</h1>
+    </header>
+    <nav>
+        <div id="navContainer">
+            <tr>
+                <td><button id="navLoginButton" class="navItem">Login</button></td>
+                <td><button id="navNewAccountButton" class="navItem">New Account?</button></td>
+                <td><h3 id="welcomeMessage"></h3></td>
+                <td><button id="logoutButton" class="navItem">logOut</button></td>
+            </tr>
+        </div>
+    </nav>
+    <div class="wrapper">
+
+        <div id="login_popup">
+            <div id="overlay"></div>
+            <div class="mask">
+                <div class="login_table">
+                    <h3>Login</h3>
+                    <div id="loginCaption"></div>
+                    <table>
+                        <tr>
+                            <td><input type="text" class="loginInput" id="loginEmail" placeholder="Email" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" class="loginInput" id="loginPassword" placeholder="Password" ></td>
+                        </tr>
+                        <tr>
+                            <td><button id="loginButton" class="loginButton">Login</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="newAccountButton" class="loginButton">New Account?</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="create_popup">
+            <div id="overlay2"></div>
+            <div class="mask">
+                <div class="login_table">
+                    <h3>Create New Account</h3>
+                    <div id="createCaption"></div>
+                    <table>
+                        <tr>
+                            <td><input type="text" class="loginInput" id="userFirstName" placeholder="First Name" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="loginInput" id="userLastName" placeholder="Last Name" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="loginInput" id="newLoginEmail" placeholder="Email" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" class="loginInput" id="newLoginPassword" placeholder="Password" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" class="loginInput" id="passwordConfirm" placeholder="Confirm Password" ></td>
+                        </tr>
+                        <tr>
+                            <td><button id="createAccountButton" class="loginButton">Create Account</button></td>
+                        </tr>
+                    </table>
+                </div> 
+            </div>
+        </div>
+
+        <div class="newEventContainer">
+            <h2 id="newEventHeader">New Upcoming Event?</h2>
+            <div id="newEventMask">
+                <table id="newEventTable">
+                    <tr>
+                        <td><input type="text" id="newEventName" class="newEventInput" placeholder="Event Name"></td>
+                        <td><input type="text" id="newEventSubject" class="newEventInput" placeholder="Subject"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="newEventDate" class="newEventInput" placeholder="Date"></td>
+                        <td><input type="text" id="newEventDetails" class="newEventInput" placeholder="Details"></td>
+                    </tr>
+                </table>
+                <button id="createEventButton" class="newEventButton">SUBMIT</button>
+            </div>
+        </div>
+
+        <div id="eventsContainer">
+            <h2 id="eventsHeader">Current Upcoming Events</h2>
+            <div id="eventList">
+
+            </div>
+        </div>
+
+
+    </div>
+    <script type="text/javascript" src="toDo.js"></script>
+</body>
+</html>
